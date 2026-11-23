@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nabila ♡</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #05050c;
+    color: #eadfff;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 35px 18px 50px;
+}
+
+/* BINTANG */
+
+.stars {
+    color: #bda1f5;
+    font-size: 24px;
+    letter-spacing: 13px;
+    margin: 20px 0;
+    animation: twinkle 2s infinite alternate;
+}
+
+/* JUDUL */
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(18px, 4.5vw, 30px);
+    line-height: 1.8;
+    color: #f1e5ff;
+    text-shadow: 4px 4px #39305e;
+    margin-top: 35px;
+}
+
+.subtitle {
+    font-size: 30px;
+    color: #c6a8ee;
+    margin-bottom: 35px;
+}
+
+/* PITA */
+
+.bow {
+    font-size: 48px;
+    color: #7770b6;
+    margin: 15px;
+}
+
+/* SURAT LOVE */
+
+.letter-card {
+    background: #15172e;
+    border: 3px dashed #a88bd8;
+    border-radius: 12px;
+    padding: 35px 22px;
+    max-width: 580px;
+    margin: 20px auto;
+    box-shadow: 7px 7px #090914;
+    position: relative;
+}
+
+.letter-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    color: #d8baff;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.message {
+    font-size: 28px;
+    line-height: 1.5;
+    color: #eee1ff;
+}
+
+button {
+    background: #292344;
+    color: #f5eaff;
+    border: 3px solid #c4a2e8;
+    padding: 16px 18px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px #080811;
+    transition: .2s;
+}
+
+button:hover {
+    background: #655083;
+    transform: translateY(-3px);
+}
+
+#loveLetter {
+    display: none;
+    margin-top: 30px;
+    border-top: 2px dashed #a88bd8;
+    padding-top: 25px;
+    animation: appear 1s ease;
+}
+
+/* PIXEL ART */
+
+.pixel-art {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    display: block;
+    height: auto;
+}
+
+.art-section {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 12px;
+    margin: 40px auto 15px;
+    flex-wrap: wrap;
+}
+
+#lotso {
+    width: min(47%, 300px);
+}
+
+#tulip {
+    width: min(42%, 260px);
+}
+
+.bottom-text {
+    font-size: 23px;
+    color: #bca5df;
+    margin-top: 25px;
+}
+
+/* ANIMASI */
+
+@keyframes twinkle {
+    from { opacity: .45; }
+    to { opacity: 1; }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 480px) {
+    .letter-card {
+        padding: 25px 15px;
+    }
+
+    .message {
+        font-size: 24px;
+    }
+
+    #lotso {
+        width: 48%;
+    }
+
+    #tulip {
+        width: 43%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- BAGIAN ATAS -->
+
+    <div class="stars">✦ ★ ✧ ★ ✦</div>
+
+    <div class="bow">୨୧</div>
+
+    <h1>
+        HAPPY<br>
+        BIRTHDAY<br>
+        NABILA!
+    </h1>
+
+    <p class="subtitle">
+        ♡ a special day for you ♡
+    </p>
+
+    <div class="stars">♡ ✦ ♡ ✦ ♡</div>
+
+    <!-- SURAT LOVE -->
+
+    <div class="letter-card">
+
+        <div class="letter-title">
+            A LITTLE LETTER<br>
+            FOR NABILA ♡
+        </div>
+
+        <p class="message">
+            Happy Birthday, Nabila! ♡
+            <br><br>
+            Semoga kamu selalu punya
+            alasan untuk tersenyum,
+            dikelilingi hal-hal baik,
+            dan mendapatkan kebahagiaan
+            yang kamu pantas dapatkan.
+            <br><br>
+            You deserve all the good things
+            in this world!
+        </p>
+
+        <button onclick="openLetter()">
+            OPEN YOUR LETTER ♡
+        </button>
+
+        <div id="loveLetter">
+
+            <p class="message">
+                Dear Nabila ♡
+                <br><br>
+                Selamat bertambah usia!
+                <br><br>
+                Semoga semua impianmu
+                bisa tercapai satu per satu.
+                Semoga hari-harimu dipenuhi
+                kebahagiaan dan cerita indah.
+                <br><br>
+                Jangan pernah lupa kalau
+                kamu adalah seseorang
+                yang berharga.
+                <br><br>
+                Stay happy, stay lovely!
+                <br><br>
+                With love ♡
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- LOTSO DAN BUKET TULIP -->
+
+    <div class="stars">✧ ♡ ✧</div>
+
+    <div class="art-section">
+
+        <canvas id="lotso" class="pixel-art"></canvas>
+
+        <canvas id="tulip" class="pixel-art"></canvas>
+
+    </div>
+
+    <div class="stars">♡ ✦ ♡ ✦ ♡</div>
+
+    <p class="bottom-text">
+        made with love, just for Nabila ♡
+    </p>
+
+</div>
+
+<script>
+
+// FUNGSI MEMBUAT PIXEL ART
+function drawSprite(id, rows, colors) {
+
+    const canvas = document.getElementById(id);
+    const ctx = canvas.getContext('2d');
+
+    const width = Math.max(...rows.map(row => row.length));
+
+    canvas.width = width;
+    canvas.height = rows.length;
+
+    rows.forEach((row, y) => {
+
+        [...row].forEach((pixel, x) => {
+
+            if (colors[pixel]) {
+                ctx.fillStyle = colors[pixel];
+                ctx.fillRect(x, y, 1, 1);
+            }
+
+        });
+
+    });
+
+}
+
+// LOTSO-INSPIRED PINK BEAR PIXEL ART
+
+drawSprite('lotso', [
+'..KKKKKK.......KKKKKK..',
+'.KPPPPPKKKKKKKKKPPPPPK.',
+'KPPPPPPNNNPPPNNNPPPPPPK',
+'KPPPPPNPPKKKKKPPNPPPPPK',
+'KPPPPNWWWWPPPWWWWNPPPPK',
+'.KPPPPWEEEPPPEEEWPPPPK.',
+'..KPPPWEEEPPPEEEWPPPK..',
+'.KPPPCCCCCCCCCCCCCPPPK.',
+'.KPPCCNNNNNNNNNNNCCPPK.',
+'.KPCCNNNNNNNNNNNNNCCPK.',
+'.KPCCCNNNNNNNNNNNCCCPK.',
+'.KPPCCCNNNNNNNNNCCCPPK.',
+'.KPPCCCCNNNNNNNCCCCPPK.',
+'.KPPPCCCCNNNNNCCCCPPPK.',
+'.KPPPCCCCCNNNCCCCCPPPK.',
+'..KPPPCCCCCCCCCCCPPPK..',
+'...KPPCCCCCCCCCCCPPK...',
+'....KPPPCCCCCCPPPK.....',
+'.....KPPPPPPPPPPK......',
+'......KKKKKKKKKK.......',
+'.....KPPPCCCCCPPPK.....',
+'....KPPPCCCCCCCPPPK....',
+'...KPPPPCCCCCCCPPPPK...',
+'..KPPPPPCCCCCCCPPPPPK..',
+'.KPPPPKPCCCCCCCPKPPPPK.',
+'.KPPPPKPPCCCCCPPKPPPPK.',
+'..KPPKPPPCCCCCPPPKPPK..',
+'...KK.KPPPPPPPPPK.KK...',
+'......KPPPKPKPPPK......',
+'.....KPPPPPKPPPPPK.....',
+'.......KKKK.KKKK........'
+], {
+K:'#17101b',
+P:'#e65b91',
+C:'#f4dfb0',
+N:'#542044',
+W:'#fff8ed',
+E:'#25121c'
+});
+
+
+// BUKET TULIP UNGU PIXEL ART
+
+drawSprite('tulip', [
+'...RR...RRR...RR...',
+'..RWWWRWWWWWRWWWR..',
+'..RWWWRWWWWWRWWWR..',
+'.RWWWRWWWWWWWRWWWR.',
+'.RWWWRWWWWWWWRWWWR.',
+'.RWRWRWWWWWWWRWRWR.',
+'.RWRWWRWWWWWRWWRWR.',
+'..RWWWRWWWWWRWWWR..',
+'..RWWWWRWWWRWWWWR..',
+'...RRWWWRWRWWWRR...',
+'.....RRRRRRRRR.....',
+'........GSG........',
+'........GSG........',
+'........GSG........',
+'........GSG........',
+'GG......GSG......GG',
+'GSG.....GSG.....GSG',
+'.GSG....GSG....GSG.',
+'..GSGG..GSG..GGSG...',
+'...GSGG.GSG.GGSG....',
+'....GSGGGSGGGSG.....',
+'.....GSGGSGGSG......',
+'......GSGSGSG.......',
+'.......GSSSG........',
+'........GSG.........'
+], {
+R:'#d8d0df',
+W:'#ffffff',
+S:'#66845c',
+G:'#397044'
+});
+
+
+// TOMBOL SURAT
+
+function openLetter() {
+
+    const letter = document.getElementById('loveLetter');
+
+    if (letter.style.display === 'block') {
+        letter.style.display = 'none';
+    } else {
+        letter.style.display = 'block';
+    }
+
+}
+
+</script>
+
+</body>
+</html>
